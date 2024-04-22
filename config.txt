@@ -1,0 +1,10 @@
+# Fichier de configuration du serveur HTTP
+
+# Port sur lequel le serveur doit écouter
+port=8080
+
+# Répertoire racine des fichiers du site web
+root_directory=html/test.html
+
+# Hôte sur lequel le serveur doit écouter (optionnel)
+# host=127.0.0.1
