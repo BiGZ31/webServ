@@ -47,3 +47,24 @@ ServerConfig readConfigFile(const std::string& configFile) {
 
     return config;
 }
+
+
+#include <iostream>
+#include "server.h" // Inclure le fichier d'en-tête où se trouve la définition du serveur et la fonction de lecture du fichier de configuration
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        std::cerr << "Usage: " << argv[0] << " <configuration_file>" << std::endl;
+        return 1;
+    }
+
+    // Lire le fichier de configuration
+    std::string configFile = argv[1];
+    ServerConfig config = readConfigFile(configFile);
+
+    // Créer et démarrer le serveur avec la configuration spécifiée
+    Server server(config);
+    server.run();
+
+    return 0;
+}

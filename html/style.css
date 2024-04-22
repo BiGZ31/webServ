@@ -1,0 +1,21 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	font-family: 'Roboto', sans-serif; /* Applying the Roboto font */
+  }
+  
+  .centered-text {
+	text-align: center;
+	font-size: 54px;
+	color: #ffffff; /* You can change the color as per your preference */
+  }
+  
+  .description {
+	font-size: 16px;
+	color: #e5e2e2; /* You can adjust the color for the description text */
+	margin-top: 10px; /* Adding some space between the title and description */
+  }
+  
